@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Муравейник</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+		@font-face {
+		font-family: Nautilus; /* Имя шрифта */
+		src: url(Nautilus.otf); /* Путь к файлу со шрифтом */
+	   }
+        html {
+            background: #fff39e;
+            overflow-x: hidden;
+        }
+        body {
+            margin: 0;
+        }
+        header {
+            margin: 0;
+            /*background-color: white;*/
+            padding: 0
+        }
+        .header-bg {
+            box-sizing: border-box;
+            background: url(o_nas_shapka.png) no-repeat center;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            -o-background-size: 100%;
+            background-size: 100%;
+            height: 105px;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            border: 0;
+            /* margin-outside: 0;
+             margin: 0;*/
+            /* font-style: italic;*/
+            text-align: left  /* Выравнивание по центру */
+        }
+        .header-bg img {
+            width: 100%;
+            margin-top: 0;
+            position: absolute; /* Относительное позиционирование */
+        }
+        .verhnee-menu {
+			font-family: Nautilus;
+            list-style: none;
+            margin: 0;
+            margin-top: 20px;
+            padding-left: 0;
+            display: flex;
+            left:50%;
+            font-size: 30px;
+            position: relative;
+            float:left;
+        }
+        .verhnee-menu li {
+            position:relative;
+            left:-50%;
+            background-color: white;
+            float:left;
+            border: 4px solid #ffcc01;
+            border-radius: 20px;
+            margin:0 10px;
+            /* border: 5px solid #d5edf7;  Рамка вокруг текста
+            border-radius: 20px; */
+            padding: 8px; /* Поля вокруг текста */
+        }
+        .verhnee-menu li:hover {
+			background-color: #FFE4B5;
+			border-radius: 30px;
+		}
+		.verhnee-menu li:active {
+			background-color: ##BDB76B;
+			border-radius: 30px;
+		}
+        a {
+            color: #191970;
+            text-decoration: none;
+        }
+
+        #sidebar {
+            left: -5px;
+            top: 200px;
+            width: 200px;
+
+            float: left;
+            position: absolute;
+            z-index: 2000;
+        }
+
+        #container {
+            /*left: 20%;
+            width: 100%;
+            float: right;*/
+            position: relative;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 0px;
+            font-family: Nautilus;
+            margin-top: 100px;
+            margin-left: 210px;
+            margin-right: 180px;
+            margin-bottom: 180px;
+            background-size: contain;
+            background-color: white;
+	    border-radius: 30px;
+
+        }
+        .left_side_menu {
+			font-family: Nautilus;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            z-index: 2000;
+
+        }
+
+        .left_side_menu li{
+            background: url(menu1.png) no-repeat 10px 0;
+            width: 230px;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            position: static;
+        }
+		.left_side_menu li:hover{
+			margin: 0 0 0 0.5vw;
+		}
+
+        .left_side_menu li a span {
+            font-size: 18px;
+            margin: -5px;
+            padding: 7px 40px 5px 5px;
+            display: block;
+            text-align: right;
+            color: black;
+        }
+
+
+        #container  p {
+            font-size: 23px;
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+
+        h1 {
+            display: block;
+            text-align: center;
+            font-size: 2em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+        li {
+            font-size: 23px;
+            padding-left: 0;
+            margin-left: -40px;
+            padding-top: 10px;
+        }
+        b {
+            font-size: 23px;
+            padding-left: 0;
+            padding-top: 10px;
+
+        }
+        .otstup {
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-bg">
+
+    </div>
+</header>
+
+<ul class="verhnee-menu">
+    <li><a href="o_nas.html">О нас</a></li>
+    <li><a href="prodlenka.html">Продленка</a></li>
+    <li><a href="foreign_languages.html">Иностранные языки</a></li>
+    <li><a href="kontakts.html">Контакты</a></li>
+</ul>
+<div id="sidebar">
+    <ul class="left_side_menu">
+        <li><a href="o_nas.html"><span>О нас</span></a></li>
+        <li><a href="o_nas_neyropshycho.html"><span>Нейропсихология</span></a></li>
+        <li><a href="o_nas_podgotovka.html"><span>Подготовка к школе</span></a></li>
+        <li><a href="o_nas_dlya_malenkih.html"><span>Занятия для малышей</span></a></li>
+        <li><a href="o_nas_letnyy_lager.html"><span>Летний лагерь</span></a></li>
+    </ul>
+</div>
+
+<div id="container">
+    <h1><font color=191970>Летний лагерь</font></h1>
+    <p><font color=#DC143C>
+        Приглашаем в развивающий детский лагерь Центра Гармоничного Развития Ребенка "Муравейник" с 1 по 30 августа!</font>
+        <br><br>
+        В программе: игры и соревнования на свежем воздухе в парке,
+        изостудия, занятия оригами, бисероплетение, шахматы, шашки,
+        английский, немецкий и французский в игровой форме,
+        во время которых ребята не только получат знания о языке, но и сведения о культуре и традициях
+        стран изучаемых языков. <br><br>
+        Игры и занятия на развитие логики, математические квесты, чтение художественной литературы по школьной программе,
+        изучение таблицы умножения в игровой форме, походы в кино. <br><br><font color=#006400>
+        Стоимость 2750 руб/неделя + обеды в кафе(150 руб./день)
+        или с собой (если у ребенка непереносимость определенных продуктов).</font>
+        <br><br>
+        Режим работы: с 9.00 до 17.00
+        <br><br>
+        Ждем ребят в наш летний лагерь!
+    </p>
+    <img src="letnyy_lager.jpg" width="70%">
+    <div class="otstup">
+
+    </div>
+</div>
+</body>
+</html>

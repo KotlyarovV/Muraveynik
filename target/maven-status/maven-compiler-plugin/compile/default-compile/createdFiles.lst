@@ -1,0 +1,4 @@
+servlets/MainpageServlet.class
+main/Main.class
+servlets/FileSender.class
+templates/PageGenerator.class

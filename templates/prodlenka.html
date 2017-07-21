@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Муравейник</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+		@font-face {
+		font-family: Nautilus; /* Имя шрифта */
+		src: url(Nautilus.otf); /* Путь к файлу со шрифтом */
+	   }
+        html {
+            background: #fff39e;
+            overflow-x: hidden;
+        }
+        body {
+            margin: 0;
+        }
+        header {
+            margin: 0;
+            /*background-color: white;*/
+            padding: 0
+        }
+        .header-bg {
+            box-sizing: border-box;
+            background: url(o_nas_shapka.png) no-repeat center;
+            -moz-background-size: 100%;
+            -webkit-background-size: 100%;
+            -o-background-size: 100%;
+            background-size: 100%;
+            height: 105px;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            border: 0;
+            /* margin-outside: 0;
+             margin: 0;*/
+            /* font-style: italic;*/
+            text-align: left  /* Выравнивание по центру */
+        }
+        .header-bg img {
+            width: 100%;
+            margin-top: 0;
+            position: absolute; /* Относительное позиционирование */
+        }
+        .verhnee-menu {
+			font-family: Nautilus;
+            list-style: none;
+            margin: 0;
+            margin-top: 20px;
+            padding-left: 0;
+            display: flex;
+            left:50%;
+            font-size: 30px;
+            position: relative;
+            float:left;
+        }
+        .verhnee-menu li {
+            position:relative;
+            left:-50%;
+            background-color: white;
+            float:left;
+            border: 4px solid #ffcc01;
+            border-radius: 20px;
+            margin:0 10px;
+            /* border: 5px solid #d5edf7;  Рамка вокруг текста
+            border-radius: 20px; */
+            padding: 8px; /* Поля вокруг текста */
+        }
+        .verhnee-menu li:hover {
+			background-color: #FFE4B5;
+			border-radius: 30px;
+		}
+		.verhnee-menu li:active {
+			background-color: ##BDB76B;
+			border-radius: 30px;
+		}
+        a {
+            text-decoration: none;
+             color: #191970;
+        }
+
+        #sidebar {
+            left: 10px;
+            top: 200px;
+            width: 200px;
+            float: left;
+            position: absolute;
+            z-index: 2000;
+        }
+
+        #container {
+            /*left: 20%;
+            width: 100%;
+            float: right;*/
+            position: relative;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 0px;
+            font-family: Nautilus;
+            margin-top: 100px;
+            margin-left: 180px;
+            margin-right: 180px;
+            margin-bottom: 180px;
+            background-size: contain;
+            background-color: white;
+	    border-radius: 30px;
+
+        }
+        .left_side_menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            z-index: 2000;
+
+        }
+
+        .left_side_menu li{
+            background: url(menu.png) no-repeat 10px 0;
+            width: 230px;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            position: static;
+        }
+
+        .left_side_menu li a span {
+            font-size: 18px;
+            margin: 0;
+            padding: 20px 10px 10px 12px;
+            display: block;
+            text-align: right;
+        }
+
+
+        #container  p {
+            font-size: 23px;
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+
+        h1 {
+            display: block;
+            text-align: center;
+            font-size: 2em;
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-bg">
+    </div>
+</header>
+
+<ul class="verhnee-menu">
+    <li><a href="o_nas.html">О нас</a></li>
+    <li><a href="prodlenka.html">Продленка</a></li>
+    <li><a href="foreign_languages.html">Иностранные языки</a></li>
+    <li><a href="kontakts.html">Контакты</a></li>
+</ul>
+
+<div id="container">
+    <h1><font color=191970>Группа продленного дня</font></h1>
+    <p>
+        Не секрет, что в любом деле важна регулярность, особнно это касается
+        обучения. Наш центр гармоничного развития ребенка "Муравейник" возьмет на себя Вашу
+        основную обязанность в обучении ребенка-школьника - регулярное выполнение школьного
+        домашнего задания. В результате ежедневных занятий Ваш ребенок будет с удовольствием ходить в школу
+        и осваивать школьную программу.<br><br>
+        После школьных занятий мы забираем Вашего ребенка из школы, если ребенок
+        учится в 1 смену и отвозим его в школу после продленки, если он занимается
+        во 2 смену, и предлагаем, кроме выполнения
+        домашнего задания, двухразовое в неделю пребывание в группе продленного дня на английском языке
+        и двухразовое в неделю на немецком или французском языках.<br><br>
+        Чтобы выполнение домашнего задания не было скучным и утомительным для ребенка, в перерывах
+        мы предлагаем разнообразные занятия по интересам: шахматы, рисование, бисероплетение, оригами,
+        чтение литературы, прогулки на свежем воздухе.<br><br><font color=#006400>
+        Один день - 650 рублей.<br>
+	Сопровождение ребенка в школу - 150 рублей. <br></font>
+    </p>
+    <p><b>
+        Мы постаремся сделать пребывание Вашего ребенка в нашей группе продленного дня максимально эффективным
+        и интересным!
+    </b></p>
+</div>
+</body>
+</html>
