@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,21 +9,32 @@
     <![endif]-->
     <style>
 		@font-face {
-		font-family: Nautilus; /* Имя шрифта */
-		src: url(Nautilus.otf); /* Путь к файлу со шрифтом */
-	   }
+			font-family: Nautilus; /* Имя шрифта */
+			src: url(Nautilus.otf); /* Путь к файлу со шрифтом */
+	    }
+	   
+		@font-face {
+			font-family: Alice-Regular; /* Имя шрифта */
+			src: url(Alice-Regular.ttf); /* Путь к файлу со шрифтом */
+	    }
+	   
         html {
             background: #fff39e;
             overflow-x: hidden;
         }
+		
         body {
             margin: 0;
+            width: 100%;
+            min-width: 1300px;
         }
+		
         header {
             margin: 0;
             /*background-color: white;*/
             padding: 0
         }
+		
         .header-bg {
             box-sizing: border-box;
             background: url(o_nas_shapka.png) no-repeat center;
@@ -52,13 +64,12 @@
             margin-top: 20px;
             padding-left: 0;
             display: flex;
-            left:50%;
             font-size: 30px;
             position: relative;
-            float:left;
+            justify-content: center;
         }
+		
         .verhnee-menu li {
-            position:relative;
             left:-50%;
             background-color: white;
             float:left;
@@ -69,22 +80,33 @@
             border-radius: 20px; */
             padding: 8px; /* Поля вокруг текста */
         }
+		
         .verhnee-menu li:hover {
 			background-color: #FFE4B5;
 			border-radius: 30px;
 		}
+		
 		.verhnee-menu li:active {
 			background-color: ##BDB76B;
 			border-radius: 30px;
 		}
+		
         a {
 			color: #191970;
             text-decoration: none;
         }
+		
+		.email {
+            text-align: center;
+            color: #95500C;
+            margin-bottom: 40px;
+			font: Nautilus;
+			font-size: 25px; 
+        }
 
         #sidebar {
             left: -5px;
-            top: 200px;
+            top: 270px;
             width: 200px;
 
             float: left;
@@ -100,16 +122,16 @@
             text-align: center;
             border: 2px solid white;
             border-radius: 0px;
-            font-family: Nautilus;
-            margin-top: 100px;
+            font-family: Alice-Regular;
+            margin-top: 60px;
             margin-left: 210px;
             margin-right: 180px;
             margin-bottom: 180px;
             background-size: contain;
             background-color: white;
-	    border-radius: 30px;
-
+			border-radius: 30px;
         }
+		
         .left_side_menu {
 			font-family: Nautilus;
             list-style-type: none;
@@ -141,6 +163,10 @@
             text-align: right;
             color: black;
         }
+	    .image {
+	        border: 4px solid #F0E68C;
+	        border-radius: 30px;
+	    }
 
 
         #container  p {
@@ -218,12 +244,25 @@
         залог успешного обучения, кроме того, новые друзья появляются
         не только у детей, но и у их родителей.
         <br><br>
+        <b>Расписание занятий<br><br>
+        10.00 - 10.40 (1-3 года)<br>
+        11.00 - 11.40 (3-4,5 лет)<br>
+        12.00 - 12.40 <br>(обучение чтению по методике Н.Зайцева, 2-3 года)<br><br>***<br><br>
+            15.00 - 15.40 <br>(обучение чтению по методике Н.Зайцева, 4-5 лет)<br>
+            16.00 - 16.40 (3-5 лет)<br>
+            17.00 - 17.40 (1-3 года)<br><br>
+
+            понедельник, четверг/вторник, пятница</b>
+
+
     </p>
-    <img src="malish.jpg">
+    <img src="malish.jpg" class="image">
     <div class="otstup">
 
     </div>
-
 </div>
+
+<div class="email">muraveynik.deti@mail.ru<br>
 </body>
 </html>
+

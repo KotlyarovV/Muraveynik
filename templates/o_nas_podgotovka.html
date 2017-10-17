@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,15 +9,21 @@
     <![endif]-->
     <style>
 		@font-face {
-		font-family: Nautilus; /* Имя шрифта */
-		src: url(Nautilus.otf); /* Путь к файлу со шрифтом */
-	   }
+			font-family: Nautilus; /* Имя шрифта */
+			src: url(Nautilus.otf); /* Путь к файлу со шрифтом */
+	    }
+		@font-face {
+			font-family: Alice-Regular; /* Имя шрифта */
+			src: url(Alice-Regular.ttf); /* Путь к файлу со шрифтом */
+	    }
         html {
             background: #fff39e;
             overflow-x: hidden;
         }
         body {
             margin: 0;
+            width: 100%;
+            min-width: 1300px;
         }
         header {
             margin: 0;
@@ -52,14 +59,12 @@
             margin-top: 20px;
             padding-left: 0;
             display: flex;
-            left:50%;
             font-size: 30px;
             position: relative;
-            float:left;
+            justify-content: center;
         }
 		
         .verhnee-menu li {
-            position:relative;
             left:-50%;
             background-color: white;
             float:left;
@@ -82,10 +87,21 @@
             color: #191970;
             text-decoration: none;
         }
+		.image {
+			border: 4px solid #5F9EA0;
+			border-radius: 30px;
+		}
+		.email {
+            text-align: center;
+            color: #95500C;
+            margin-bottom: 40px;
+			font: Nautilus;
+			font-size: 25px;
+        }
 
         #sidebar {
             left: -5px;
-            top: 200px;
+            top: 270px;
             width: 200px;
 
             float: left;
@@ -101,14 +117,14 @@
             text-align: center;
             border: 2px solid white;
             border-radius: 0px;
-            font-family: Nautilus;
-            margin-top: 100px;
+            font-family: Alice-Regular;
+            margin-top: 60px;
             margin-left: 210px;
             margin-right: 180px;
             margin-bottom: 180px;
             background-size: contain;
             background-color: white;
-	    border-radius: 30px;
+    	    border-radius: 30px;
 
         }
         .left_side_menu {
@@ -214,19 +230,29 @@
         Если вы хотите, чтобы Ваш ребенок посещал одну из ведущих школ города, ему необходимо обладать базовыми
         знаниями и умениями, чтобы иметь хорошую успеваемость в начальной школе и успешно адаптироваться в школьной среде.
 <br><br>
-        Этот курс включает в себя обучение чтению, счету и письму.
-        дифференцированный подход при подготовке к школе предполагает
+        Этот курс включает в себя обучение чтению, счету, письму и дополнительно английский.
+        Дифференцированный подход при подготовке к школе предполагает
         использование учебно-методического материала для поступающих
-        в ведущие школы города.
+        в лучшие школы города.
         <br><br>
         Наша общая задача - подготовленные к школе, адаптированные
         в коллективе и разносторонне развитые дети!
+        <br><br><b>Расписание занятий<br><br>
+    <br>1 группа - понедельник, четверг<br>
+        2 группа - вторник, пятница<br>
+    <br>18.30 - 19.30 (обучение грамоте, счету, логика)<br>
+        19.30 - 20.00 (английский, по желанию)<br>
+        <br><font color="#dc143c"><u>При покупке абонемента до 10 сентября скидка!</u></font></big>
+    </b>
 
     </p>
-    <img src="podgotovka.jpg" width="70%">
+    <img src="podgotovka.jpg" width="70%" class="image">
     <div class="otstup">
 
     </div>
 </div>
+
+<div class="email">muraveynik.deti@mail.ru<br>
 </body>
 </html>
+

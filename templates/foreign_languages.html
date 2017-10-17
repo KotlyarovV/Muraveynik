@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,21 +9,32 @@
     <![endif]-->
     <style>
 		@font-face {
-		font-family: Nautilus; /* Имя шрифта */
-		src: url(Nautilus.otf); /* Путь к файлу со шрифтом */
-	   }
+			font-family: Nautilus; /* Имя шрифта */
+			src: url(Nautilus.otf); /* Путь к файлу со шрифтом */
+	    }
+	   
+		@font-face {
+			font-family: Alice-Regular; /* Имя шрифта */
+			src: url(Alice-Regular.ttf); /* Путь к файлу со шрифтом */
+	    }
+	   
         html {
             background: #fff39e;
             overflow-x: hidden;
         }
+		
         body {
             margin: 0;
+            width: 100%;
+            min-width: 1300px;
         }
+		
         header {
             margin: 0;
             /*background-color: white;*/
             padding: 0
         }
+		
         .header-bg {
             box-sizing: border-box;
             background: url(o_nas_shapka.png) no-repeat center;
@@ -40,25 +52,26 @@
             /* font-style: italic;*/
             text-align: left  /* Выравнивание по центру */
         }
+		
         .header-bg img {
             width: 100%;
             margin-top: 0;
             position: absolute; /* Относительное позиционирование */
         }
+		
         .verhnee-menu {
-			font-family: Nautilus;
+    	    font-family: Nautilus;
             list-style: none;
             margin: 0;
             margin-top: 20px;
             padding-left: 0;
             display: flex;
-            left:50%;
             font-size: 30px;
             position: relative;
-            float:left;
+            justify-content: center;
         }
+		
         .verhnee-menu li {
-            position:relative;
             left:-50%;
             background-color: white;
             float:left;
@@ -69,14 +82,17 @@
             border-radius: 20px; */
             padding: 8px; /* Поля вокруг текста */
         }
+		
         .verhnee-menu li:hover {
 			background-color: #FFE4B5;
 			border-radius: 30px;
 		}
+		
 		.verhnee-menu li:active {
 			background-color: ##BDB76B;
 			border-radius: 30px;
 		}
+		
         a {
             text-decoration: none;
             color: #191970;
@@ -99,23 +115,22 @@
             text-align: center;
             border: 2px solid white;
             border-radius: 0px;
-            font-family: Nautilus;
-            margin-top: 100px;
+            font-family: Alice-Regular;
+            margin-top: 60px;
             margin-left: 180px;
             margin-right: 180px;
             margin-bottom: 180px;
             background-size: contain;
             background-color: white;
-	    border-radius: 30px;
-
+			border-radius: 30px;
         }
+		
         .left_side_menu {
             list-style-type: none;
             margin: 0;
             padding: 0;
             text-align: right;
             z-index: 2000;
-
         }
 
         .left_side_menu li{
@@ -135,13 +150,25 @@
             display: block;
             text-align: right;
         }
-
+		.image {
+			border: 4px solid #191970;
+			border-radius: 30px;
+		}
+		
+		.email {
+            text-align: center;
+            color: #95500C;
+            margin-bottom: 40px;
+			font: Nautilus;
+			font-size: 25px;
+		}
 
         #container  p {
             font-size: 23px;
             margin-left: 90px;
             margin-right: 90px;
         }
+		
         h1 {
             display: block;
             text-align: center;
@@ -151,6 +178,10 @@
             -webkit-margin-start: 0px;
             -webkit-margin-end: 0px;
             font-weight: bold;
+        }
+		
+		.otstup {
+            padding-bottom: 100px;
         }
     </style>
 </head>
@@ -178,10 +209,24 @@
         Вашему ребенку в изучении <font color=#DC143C><br><b><br>английского<br>(по Кембриджской
         программе с полным методическим обеспечением),<br> французского,
         <br>немецкого языков,<br></b><br></font> с подготовкой к
-        языковым экзаменам любого уровня.
+        языковым экзаменам любого уровня.<br><br>
+        <b>Расписание занятий<br><br>
+            <u>английский язык (в группах или индивидуально)</u><br><br>
+            понедельник, четверг/ вторник, пятница<br><br>
+            19.55 - 21.00 <br><br>***<br><br>
+            <u>немецкий язык</u><br><br>
+            вторник, среда <br><br>
+        18.00 - 19.00 <br><br>
+        суббота<br><br>
+        13.00 - 14.00 <br><br>
+        18.00 - 19.00
+        </b>
     </p>
-    <img src="inostr_yazik.jpg" width="70%">
-
+    <img src="inostr_yazik.jpg" width="70%" class="image">
+    <div class="otstup"></div>
 </div>
+<div class="email">muraveynik.deti@mail.ru<br>
 </body>
 </html>
+
+
